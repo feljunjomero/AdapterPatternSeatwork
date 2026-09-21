@@ -4,9 +4,9 @@ public class Main {
         GradingSystem gradingSystem = new GradingSystem();
         LibrarySystem librarySystem = new LibrarySystem();
 
-        SchoolManagementApp attAdapter = new AttendanceSystemAdapter(mark);
-        SchoolManagementApp gradeAdapter = new GradingSystemAdapter(record);
-        SchoolManagementApp libAdapter = new LibrarySystemAdapter(manage);
+        SchoolManagementApp attAdapter = new AttendanceSystemAdapter(attendanceSystem);
+        SchoolManagementApp gradeAdapter = new GradingSystemAdapter(gradingSystem);
+        SchoolManagementApp libAdapter = new LibrarySystemAdapter(librarySystem);
 
         System.out.println("---Testing Adapters---");
         attAdapter = integrateSystem();
